@@ -1,0 +1,27 @@
+﻿@TCCNo1TestAPI_HostAddress = https://localhost:7278
+
+GET {{TCCNo1TestAPI_HostAddress}}/api/Person
+
+###
+
+GET {{TCCNo1TestAPI_HostAddress}}/api/Person/All
+
+###
+
+@id=1
+GET {{TCCNo1TestAPI_HostAddress}}/api/Person/{{id}}
+
+###
+
+POST {{TCCNo1TestAPI_HostAddress}}/api/Person/Person
+Content-Type: application/json
+
+{
+  "Name" : "Arthit",
+  "Surname" : "Thongdee",
+  "Address" : "Sutthisan Winitchai Rd., Samsen-Nok, Huai Khwang, Bangkok 10310",
+  "Birthday" : "1999-03-07",
+  "Age" : 26
+}
+
+###
